@@ -1,0 +1,12 @@
+.logo2 {
+  animation-name: rotation1_kf;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotation1_kf {
+  to {
+    transform: rotate(360deg);
+  }
+}

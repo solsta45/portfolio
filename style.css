@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+h1 {
+  font-family: "IBM Plex Mono", monospace;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 30px;
+  color: #ffc53a;
+}
+h2 {
+  font-family: "IBM Plex Mono", monospace;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 25px;
+  color: #ffc53a;
+}
+
+p {
+  font-size: 20px;
+  padding-top: 20px;
+  color: #faff81;
+  font-family: "Open Sans", sans-serif;
+}
+
+.billede_tekst {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 13px;
+  color: black;
+}
+a {
+  text-decoration: none;
+}
+
+/****************** header *******************/
+/****************** menu *******************/
+@media (min-width: 800px) {
+  .menubar {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .menu {
+    display: flex;
+    position: fixed;
+    list-style: none;
+    gap: 120px;
+    padding-top: 60px;
+    align-items: stretch;
+    padding-left: 400px;
+  }
+  .menu a {
+    color: #faff81;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "IBM Plex Mono", monospace;
+  }
+  .menu a:hover {
+    color: #ffc53a;
+  }
+  a.active {
+    color: #ffc53a;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-toggle {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 20px;
+    color: #faff81;
+    background-color: #f9f9f900;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #f9f9f900;
+    padding: 8px;
+  }
+
+  .dropdown-menu li {
+    list-style: none;
+  }
+
+  .dropdown-menu li a {
+    text-decoration: none;
+    color: #faff81;
+    font-size: 16px;
+    display: block;
+    padding: 6px 12px;
+  }
+
+  .dropdown-menu li a:hover {
+    background-color: #dddddd00;
+    color: #ffc53a;
+  }
+
+  /****************** footer *******************/
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .kontakt {
+    display: flex;
+    gap: 90px;
+    margin-left: 420px;
+    margin-bottom: 10px;
+    color: #faff81;
+  }
+
+  .logo2 {
+    position: relative;
+    width: 70px;
+    margin-bottom: 10px;
+  }
+
+  .kontakt_tekst {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 15px;
+    padding-top: 20px;
+    color: #faff81;
+  }
+
+  /****************** main *******************/
+  main {
+    height: auto;
+    max-width: 1450px;
+    margin: 0 auto;
+  }
+
+  body {
+    margin: 0;
+    background-image: url(SVG/backround.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .forside_container {
+    height: 600px;
+    position: relative;
+    width: 500px;
+  }
+  .forside_link {
+    position: absolute;
+    top: 90px;
+    left: 450px;
+  }
+
+  /****************** logo *******************/
+  .logo {
+    width: 45%;
+    padding-top: 10px;
+    padding-left: 20px;
+  }
+}
+/****************** mobilesite *******************/
+@media (max-width: 800px) {
+  * {
+    margin: 5px;
+    padding: 2px;
+    box-sizing: border-box;
+  }
+
+  img {
+    width: 100%;
+    display: block;
+    height: auto;
+  }
+
+  /******************* logo *******************/
+
+  .logo {
+    width: 35%;
+  }
+  /****************** menu *******************/
+  .menu {
+    display: none;
+    position: fixed;
+    text-align: center;
+  }
+
+  .burger {
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    padding-left: 0;
+  }
+
+  .burger .line {
+    width: 30px;
+    height: 2px;
+    background-color: #ffc53a;
+    margin-bottom: 5px;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+  }
+  nav.active .menu {
+    display: block;
+    background-color: #0268c17c;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+    list-style-type: none;
+  }
+
+  nav.active .menu a {
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    color: #ffc53a;
+  }
+
+  nav.active .menu a:hover {
+    color: #faff81;
+  }
+
+  .dropdown-toggle {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    color: #ffc53a;
+    background-color: #f9f9f900;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  /****************** main *******************/
+  main {
+    height: auto;
+    max-width: 1450px;
+    margin: 0 auto;
+  }
+
+  body {
+    margin: 0;
+    background-image: url(SVG/backround.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+  .forside_container {
+    height: 600px;
+    position: relative;
+    width: 500px;
+  }
+  .forside_link {
+    position: absolute;
+    top: 0px;
+    left: 150px;
+  }
+  /****************** footer *******************/
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .kontakt {
+    display: flex;
+    gap: 30px;
+    margin-left: 120px;
+    color: #faff81;
+  }
+
+  .logo2 {
+    position: relative;
+    width: 70px;
+  }
+  .kontakt_tekst {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 15px;
+    padding-top: 20px;
+    color: #faff81;
+  }
+}

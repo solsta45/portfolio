@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="grid.css">
+    <link rel="icon" type="image/svg+xml" href="SVG/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>grundleggende web</title>
+</head>
+
+<body>
+    <header>
+
+        <div class="menubar">
+            <div class="logo">
+                <a href="index.html">
+                    <img class="logo" src="SVG/navn1.svg" alt="logo">
+                </a>
+            </div>
+
+            <div>
+                <nav>
+                    <ul class="menu">
+                        <div class="dropdown">
+                            <button onclick="toggleDropdown()" class="dropdown-toggle">Tema</button>
+                            <ul id="dropdown-menu" class="dropdown-menu">
+                                <li><a class="" href="web.html">02_Web</a></li>
+                                <li><a class="" href="ux.html">03_UX</a></li>
+                                <li><a class="" href="animation.html">04_Animation</a></li>
+                                <li><a class="" href="indhold.html">05_indhold</a></li>
+                            </ul>
+                        </div>
+                        <li><a class="" href="portfolie.html">Portfolie</a></li>
+                        <li><a class="" href="ommeg.html">CV</a></li>
+
+                    </ul>
+                    <div class="burger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+        <h1>Grundlæggende Web</h1>
+        <div class="web_1">
+            <div>
+                <a href="https://lillekaninbea.dk/kea/02_web/website/index.html">
+                    <h2>Studiestartsprøve</h2>
+                </a>
+
+                <p>Til studiestartsprøven fikk vi utdelt bilder, wireframes og layout-diagrammer vi skulle bruke til å
+                    kode vores første
+                    oppgave. Dette var mitt første møte med HTML og CSS. Vi skulle ta i bruk grids, flexbox og
+                    media-queries for å få det
+                    hele til å passe både desktop og mobilesite.
+
+                    Da jeg fikk satt det hele på plass i koden, stylet jeg det slik jeg selv ønsket, uten noe baktanke.
+                    Det var ikke særlig
+                    designprosessen vi vektla, men mer å lære seg helt simpel kodning.
+                </p>
+            </div>
+            <div class="mobilesite">
+                <img src="imgs/web1.webp" alt="">
+                <p class="billede_tekst">mobilesite</p>
+            </div>
+            <div class="imgs_border">
+                <img src="imgs/web2.webp" alt="">
+                <p class="billede_tekst">desktop</p>
+            </div>
+
+        </div>
+
+        <div class="web_2">
+
+            <div class="mobilesite">
+                <img src="imgs/web5.webp" alt="">
+                <p class="billede_tekst">mobilesite</p>
+            </div>
+            <div>
+                <a href="https://lillekaninbea.dk/kea/02_web/02_emnesite/index.html">
+                    <h2>Emnesite</h2>
+                </a>
+                <p>Til emnesitet skulle vi selv utvelge et tema vi ville skrive om. Jeg valgte å lage en liten blogg med
+                    noen bilder jeg
+                    hadde tatt den siste tiden. Vi brukte illustrator og XD til og lage moodboards og styletile. I XD
+                    lærte vi selv å lage
+                    wireframes og hvordan vi skulle bruke dem.
+
+                    Vi ble introdusert til forskjellige designstiler og prinsipper som vi har fått mye bruk for resten
+                    av semesteret. Jeg
+                    valgte som utgangspunkt å gå for noe retro stil med fargevalget og bildene, men syns det var
+                    vanskelig å få den visuelle
+                    identiteten jeg ønsket. Jeg valgte så et simpelt grid og typografi, så det hele så mer minimalistisk
+                    ut.
+
+                </p>
+            </div>
+            <div class="imgs_border">
+                <img src="imgs/web4.webp" alt="">
+                <p class="billede_tekst">index</p>
+            </div>
+            <div class="imgs_border">
+                <img src="imgs/web_wireframe.webp" alt="">
+                <p class="billede_tekst">wireframe</p>
+            </div>
+            <div class="moodboard">
+                <img src="imgs/moodboardpng.webp" alt="">
+                <p class="billede_tekst">moodboard</p>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div class="kontakt">
+            <p class="kontakt_tekst">sost0001@stud.kea.dk</p>
+            <div class="logo2"><img src="SVG/logo.svg" alt="logo_footer"></div>
+            <p class="kontakt_tekst">@solveigstamnes</p>
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+
+    <script src="menu.js"></script>
+</body>
+
+
+</html>
