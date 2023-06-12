@@ -22,6 +22,12 @@ h2 {
   font-size: 25px;
   color: #ffc53a;
 }
+h3 {
+  font-family: "IBM Plex Mono", monospace;
+  padding-top: 50px;
+  font-size: 20px;
+  color: #faff81;
+}
 
 p {
   font-size: 20px;
@@ -47,6 +53,9 @@ a {
     grid-template-columns: 1fr 2fr;
   }
 
+  .menu_02 {
+    display: none;
+  }
   .menu {
     display: flex;
     position: fixed;
@@ -54,7 +63,7 @@ a {
     gap: 120px;
     padding-top: 60px;
     align-items: stretch;
-    padding-left: 400px;
+    padding-left: 600px;
   }
   .menu a {
     color: #faff81;
@@ -76,7 +85,7 @@ a {
     list-style: none;
     padding-top: 60px;
     align-items: stretch;
-    padding-left: 240px;
+    padding-left: 440px;
   }
 
   .dropdown-toggle {
@@ -93,7 +102,7 @@ a {
     display: none;
     position: absolute;
     z-index: 1;
-    background-color: #f9f9f900;
+    background-color: #0268c100;
     padding: 8px;
   }
 
@@ -198,10 +207,16 @@ a {
   /****************** menu *******************/
   .menu {
     display: none;
-    position: fixed;
+  }
+
+  .menu_02 {
+    display: none;
     text-align: center;
   }
 
+  .dropdown {
+    display: none;
+  }
   .burger {
     display: block;
     position: fixed;
@@ -230,41 +245,33 @@ a {
   .burger.active .line:nth-child(3) {
     transform: rotate(-45deg) translate(6px, -6px);
   }
-  nav.active .menu {
+  nav.active .menu_02 {
     display: block;
-    background-color: #0268c17c;
+    background-color: #0268c182;
     position: fixed;
-    top: 60px;
+    top: 100px;
     left: 0;
     width: 100%;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0);
     z-index: 1;
+    align-items: center;
   }
 
-  nav.active .menu li {
+  nav.active .menu_02 li {
     margin: 10px 20px;
     list-style-type: none;
   }
 
-  nav.active .menu a {
+  nav.active .menu_02 a {
     font-size: 14px;
-    text-align: center;
+    align-items: center;
     text-decoration: none;
     color: #ffc53a;
+    font-family: "IBM Plex Mono", monospace;
   }
 
   nav.active .menu a:hover {
     color: #faff81;
-  }
-
-  .dropdown-toggle {
-    font-family: "Montserrat", sans-serif;
-    font-size: 20px;
-    color: #ffc53a;
-    background-color: #f9f9f900;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
   }
 
   /****************** main *******************/
