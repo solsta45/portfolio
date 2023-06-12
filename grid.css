@@ -70,8 +70,9 @@
   .ux_01 {
     display: grid;
     margin: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 60px;
+    padding-right: 60px;
+    height: 400px;
   }
   /****************** animation *******************/
   .animation_1 {
@@ -135,6 +136,7 @@
 
   .portfolie_02 {
     display: grid;
+    grid-row: 1 / span 1;
   }
 
   .portfolie_03 {

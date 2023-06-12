@@ -71,6 +71,12 @@ a {
   .dropdown {
     position: relative;
     display: inline-block;
+    display: flex;
+    position: fixed;
+    list-style: none;
+    padding-top: 60px;
+    align-items: stretch;
+    padding-left: 240px;
   }
 
   .dropdown-toggle {
@@ -97,10 +103,12 @@ a {
 
   .dropdown-menu li a {
     text-decoration: none;
-    color: #faff81;
+    font-family: "IBM Plex Mono", monospace;
     font-size: 16px;
+    color: #faff81;
     display: block;
-    padding: 6px 12px;
+    padding: 1px 1px;
+    margin-top: 35px;
   }
 
   .dropdown-menu li a:hover {
