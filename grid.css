@@ -174,7 +174,7 @@
 
   .ommeg_01 p {
     margin-left: 350px;
-    margin-top: 100px;
+    margin-top: 10px;
   }
 
   .ommeg_02 {
@@ -193,5 +193,18 @@
     width: 600px;
     grid-column: 2;
     grid-row: 2;
+  }
+
+  .ommeg_01 img {
+    width: 100%;
+    margin-left: 140px;
+  }
+  video {
+    margin-top: 15%;
+    height: auto;
+    display: block;
+    max-width: 100%;
+    box-sizing: border-box;
+    border: 1px solid black;
   }
 }
