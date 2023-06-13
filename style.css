@@ -49,6 +49,10 @@ a :hover {
   color: #ffc53a;
 }
 
+.kontakt :hover {
+  color: #ffc53a;
+}
+
 /****************** header *******************/
 /****************** menu *******************/
 @media (min-width: 800px) {
@@ -176,27 +180,26 @@ a :hover {
     height: 600px;
     position: relative;
     width: 500px;
+    margin-bottom: 10px;
   }
   .forside_link {
     position: absolute;
-    top: 50px;
+    top: 80px;
     left: 480px;
+    width: 100%;
+    height: auto;
   }
 
   .forside_container :hover {
     display: none;
   }
 
-  .forside_container_02 {
-    height: 600px;
-    position: relative;
-    width: 500px;
-  }
-
   .forside_link_02 {
     position: absolute;
-    top: 50px;
+    top: 80px;
     left: 480px;
+    width: 100%;
+    height: auto;
   }
 
   /****************** logo *******************/
